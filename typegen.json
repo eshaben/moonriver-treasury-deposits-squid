@@ -1,11 +1,9 @@
 {
   "outDir": "src/types",
   "chainVersions": "moonbeamVersions.json",
-  "typesBundle": "moonbeam",
+  "typesBundle": "moonriver",
   "events": [
-    "assets.Transferred",
-    "assets.Issued",
-    "assets.Burned"
+    "treasury.Deposit"
   ],
   "calls": []
 }

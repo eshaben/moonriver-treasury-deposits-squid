@@ -1,2 +1,2 @@
-export * from "./transfer.model"
-export * from "./_assetStatus"
+export * from "./balanceDeposit.model"
+export * from "./treasuryDeposit.model"

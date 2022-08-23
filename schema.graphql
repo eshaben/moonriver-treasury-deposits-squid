@@ -1,20 +1,21 @@
-enum AssetStatus {
-  BURNED
-  ISSUED
-  TRANSFERRED
-}
-
-type Transfer @entity {
+type BalanceDeposit @entity {
 
   id: ID! # Transaction hash
 
-  assetId: String!
-
-  to: String
-
-  from: String
+  to: String!
 
   balance: BigInt!
 
-  status: AssetStatus!
+  timestamp: String!
+
+}
+
+type TreasuryDeposit @entity {
+
+  id: ID! # Transaction hash
+
+  balance: BigInt!
+
+  timestamp: String!
+  
 }
